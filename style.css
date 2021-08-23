@@ -32,7 +32,7 @@ body {
   background-image: url(asset/svg.png);
   background-size: cover;
   height: 100vh;
-  padding-top: 5%;
+  padding-top: 70px;
   cursor: default;
 }
 
@@ -58,6 +58,10 @@ body {
   border-bottom: 2px solid white;
 }
 /* Tentang */
+#tentang {
+  background-color: #ff8303;
+}
+
 #tentang .container h1 {
   font-weight: bold;
   font-variant: small-caps;
@@ -67,3 +71,19 @@ body {
   font-size: 20px;
   margin-top: -10px;
 }
+
+#tentang .col-3 span {
+  font-weight: bold;
+  border-bottom: 3px solid rgb(14, 14, 14);
+}
+
+#tentang .col-lg-5 img {
+  width: 300px;
+  transition: 0.5s;
+}
+
+#tentang .col-lg-5 img:hover {
+  transform: translateY(-8px);
+}
+
+/* Galeri */
