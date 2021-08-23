@@ -31,7 +31,7 @@ body {
 .jumbotron {
   background-image: url(asset/svg.png);
   background-size: cover;
-  height: 640px;
+  height: 100vh;
   padding-top: 5%;
   cursor: default;
 }
