@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,106 +7,63 @@
 }
 
 body {
-  background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Navbar */
-nav {
-  display: flex;
-  background-color: black;
-  justify-content: space-around;
-  height: 45px;
-  align-items: center;
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-nav .logo-navbar {
-  display: flex;
-  align-items: center;
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
 }
 
-nav .logo-navbar a {
+.navbar {
+  background-color: #1b1a17;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url(asset/svg.png);
+  background-size: cover;
+  height: 640px;
+  padding-top: 5%;
+  cursor: default;
+}
+
+.text-jumbotron {
+  max-width: 700px;
+  min-width: 20%;
+  background-color: rgba(0, 0, 0, 0.795);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 40px;
+  border-radius: 20px;
   color: white;
-  font-family: "Oswald", sans-serif;
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  text-decoration: none;
-  font-size: 1.5em;
 }
 
-nav .logo-navbar img {
-  margin-right: 5px;
-  height: 35px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 0.849);
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav ul li a:hover {
-  color: rgb(255, 202, 55);
-}
-
-/* Welcome Section */
-
-#beranda {
-  margin-bottom: -5px;
-  background-color: #ffdac031;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.logo img {
-  height: 250px;
-  margin: 10px;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-}
-
-.title a {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
-  color: black;
-  text-decoration: none;
+.text-jumbotron h1 {
   font-weight: bold;
 }
 
-/* tentang */
-
-#tentang {
-  background-color: #ff6900ff;
-}
-
-.container {
-  display: flex;
-  place-items: center;
-  flex-direction: column;
-}
-
-.container .judul {
-  font-family: "Oswald", sans-serif;
-  font-variant: small-caps;
-  font-size: 1.5em;
-}
-
-.container .deskripsi {
-  font-family: Arial, Helvetica, sans-serif;
+.text-jumbotron p a {
   color: white;
-  width: 50%;
-  text-align: center;
-  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 2px solid white;
+}
+/* Tentang */
+#tentang .container h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+#tentang .container p {
   font-size: 20px;
+  margin-top: -10px;
 }

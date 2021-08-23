@@ -3,68 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="deskription" content="landing page rohis ar-rasyid" />
+    <meta name="keywords" content="Rohis, sma, smansa, sma negeri 1 gorontalo" />
+    <meta name="author" content="IyadRozan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohis Sma 1 gorontalo</title>
+    <title>Rohis Ar-Rasyid</title>
 
-    <!-- my css -->
+    <!-- My css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
   </head>
   <body>
     <!-- Navbar start -->
-    <nav>
-      <div class="logo-navbar">
-        <img src="asset/logo rohis.png" alt="" />
-        <a href="#">Rohis Smansa</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="asset/logo rohis.png" alt="" width="32" height="32" />
+          Rohis Ar-Rasyid</a
+        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Daftar</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang</a></li>
-        <li><a href="#">Potret</a></li>
-        <li><a href="#">Daftar</a></li>
-      </ul>
     </nav>
-    <!-- navbar Akhir -->
-    <!-- welcome section -->
-    <section id="beranda">
-      <div class="logo">
-        <img src="asset/logo rohis.png" alt="" />
+    <!-- Navbar End -->
+    <!-- Jumbotron start -->
+    <div class="jumbotron text-center">
+      <img src="asset/logo rohis.png" alt="" width="200" height="200" />
+      <div class="text-jumbotron">
+        <h1 class="display-4">Rohis Ar-Rasyid</h1>
+        <p class="lead">Rohis Ar-Rasyid is part of <a href="https://sma1gorontalo.sch.id/" target="_blank">Sma Negeri 1 Gorontalo</a></p>
       </div>
-      <div class="title">
-        <a href="#">Rohis Ar-Rasyid</a>
-      </div>
-      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-        <path
-          d="M 0,400 C 0,400 0,133 0,133 C 205.71428571428572,171 822.8571428571429,152 1440,133 C 1440,133 1440,400 1440,400 Z"
-          stroke="none"
-          stroke-width="0"
-          fill="#ff690088"
-          class="transition-all duration-300 ease-in-out delay-150"
-        ></path>
-        <path
-          d="M 0,400 C 0,400 0,266 0,266 C 205.71428571428572,342 822.8571428571429,304 1440,266 C 1440,266 1440,400 1440,400 Z"
-          stroke="none"
-          stroke-width="0"
-          fill="#ff6900ff"
-          class="transition-all duration-300 ease-in-out delay-150"
-        ></path>
-      </svg>
-    </section>
-    <!-- welcome section -->
-    <!-- Tentang -->
+    </div>
+    <!-- Jumbotron end -->
+    <!-- about start -->
     <section id="tentang">
       <div class="container">
-        <div class="judul">
-          <h2>Tentang</h2>
-        </div>
-        <div class="deskripsi">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit dolor odio nihil cupiditate perferendis, vitae beatae, provident, fuga harum eos quidem. Enim ipsa nisi, corporis minus deleniti officia ducimus numquam error soluta
-            rem corrupti. Ab sit molestiae magnam inventore, laborum quidem, aliquam minima praesentium accusamus quia, a consequuntur excepturi consectetur fugit reiciendis. Repellat, nemo, non, harum odio quis sapiente autem doloremque
-            cumque iure dolores perferendis veniam? Aliquid provident aperiam dolorem, laudantium exercitationem esse asperiores officia delectus ipsam veniam eos voluptates at odio quos repellat, rerum maxime debitis nobis ullam totam
-            sapiente, perspiciatis voluptatum nam accusantium! Eius sunt quod facilis consequuntur!
-          </p>
+        <div class="row">
+          <div class="col text-center">
+            <h1>Tentang</h1>
+            <p>Rohis Ar-Rasyid</p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- about end -->
+    <!-- Bootsrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
