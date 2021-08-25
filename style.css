@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -60,6 +59,7 @@ body {
 /* Tentang */
 #tentang {
   background-color: #ff8303;
+  color: white;
 }
 
 #tentang .container h1 {
@@ -87,3 +87,8 @@ body {
 }
 
 /* Galeri */
+
+#galeri .container .row img {
+  width: 300px;
+  height: 300px;
+}
