@@ -14,7 +14,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   </head>
   <body>
     <!-- Navbar start -->
@@ -48,8 +48,8 @@
     <!-- Navbar End -->
     <!-- Jumbotron start -->
     <div class="jumbotron text-center">
-      <img src="asset/logo rohis.png" alt="" width="200" height="200" />
-      <div class="text-jumbotron">
+      <img src="asset/logo rohis.png" alt="" width="200" height="200" data-aos="zoom-in"/>
+      <div class="text-jumbotron" data-aos="fade-up">
         <h1 class="display-4">Rohis Ar-Rasyid</h1>
         <p class="lead">Rohis Ar-Rasyid is part of <a href="https://sma1gorontalo.sch.id/" target="_blank">Sma Negeri 1 Gorontalo</a></p>
       </div>
@@ -59,13 +59,13 @@
     <section id="tentang">
       <div class="container">
         <div class="row sorong-kiri">
-          <div class="col text-center">
+          <div class="col text-center" data-aos="fade-up" data-aos-offset="300" data-aos-delay="1000">
             <h1>Tentang</h1>
             <p>Rohis Ar-Rasyid</p>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-lg-5">
+          <div class="col-lg-5" data-aos="zoom-in-right" data-aos-offset="300" data-aos-delay="1000">
             <h3 class="text-center">Apa Itu <span>Rohis</span></h3>
             <p>
               Rohani Islam (disingkat Rohis) adalah sebuah organisasi memperdalam dan memperkuat ajaran Islam. Rohis sering disebut juga sebagai IREMA(Ikatan Remaja Masjid) atau Dewan Keluarga Masjid (DKM).[1] Rohis biasanya dikemas dalam
@@ -75,7 +75,7 @@
               tangga yang berada di naungan OSIS.[2] Rohis mampu membantu mengembangkan ilmu tentang Islam yang diajarkan di sekolah.
             </p>
           </div>
-          <div class="col-lg-5 text-center mt-5">
+          <div class="col-lg-5 text-center mt-5" data-aos="zoom-in-left" data-aos-offset="300" data-aos-delay="1000">
             <h3>Rohis Ar-Rasyid Adalah Bagian Dari</h3>
             <h3>SMA NEGERI 1 GORONTALO</h3>
             <img src="asset/logo smansa.png" alt="logo sma1gorontalo" />
@@ -86,6 +86,7 @@
     <!-- about end -->
     <!-- Galeri start-->
     <section id="galeri">
+      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,600 C 0,600 0,200 0,200 C 103.48325358851676,163.7799043062201 206.96650717703352,127.55980861244018 303,136 C 399.0334928229665,144.44019138755982 487.6172248803829,197.54066985645937 570,227 C 652.3827751196171,256.4593301435406 728.5645933014353,262.27751196172244 830,252 C 931.4354066985647,241.72248803827753 1058.1244019138758,215.34928229665073 1164,204 C 1269.8755980861242,192.65071770334927 1354.9377990430621,196.32535885167465 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#ff830388" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path><path d="M 0,600 C 0,600 0,400 0,400 C 105.79904306220098,389.9617224880383 211.59808612440196,379.92344497607655 323,399 C 434.40191387559804,418.07655502392345 551.4066985645933,466.26794258373207 622,450 C 692.5933014354067,433.73205741626793 716.775119617225,353.0047846889952 812,353 C 907.224880382775,352.9952153110048 1073.4928229665072,433.7129186602871 1190,455 C 1306.5071770334928,476.2870813397129 1373.2535885167463,438.14354066985646 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#ff8303ff" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path></svg>
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -121,7 +122,12 @@
     <!-- Bootsrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      once: true
+      });
+    </script>  
   </body>
 </html>
 
